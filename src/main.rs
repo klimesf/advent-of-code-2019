@@ -1,3 +1,7 @@
+mod day01;
+
+use crate::day01::day01;
+
 fn main() {
-    println!("Hello, world!");
+    day01();
 }
