@@ -1,7 +1,7 @@
-mod day04;
+mod day05;
 
-use crate::day04::day04;
+use crate::day05::day05;
 
 fn main() {
-    day04();
+    day05();
 }
