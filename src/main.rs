@@ -1,10 +1,10 @@
 extern crate blockingqueue;
 extern crate itertools;
 
-use crate::day08::day08;
+use crate::day09::day09;
 
-mod day08;
+mod day09;
 
 fn main() {
-    day08();
+    day09();
 }
