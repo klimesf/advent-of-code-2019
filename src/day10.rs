@@ -3,6 +3,8 @@ use std::f32::consts::PI;
 use std::fs;
 use std::os::macos::raw::stat;
 
+use crate::toolbox::gcd;
+
 type Coord = (i32, i32);
 
 pub(crate) fn day10() {
@@ -114,14 +116,4 @@ fn direction(mut x: i32, mut y: i32) -> (i32, i32) {
         x = x / gcd;
         y = y / gcd;
     }
-}
-
-fn gcd(mut a: i32, mut b: i32) -> i32 {
-    if b > a { panic!("b > a") }
-    while b != 0 {
-        let t = b;
-        b = a % b;
-        a = t;
-    }
-    return a.max(-a);
 }
