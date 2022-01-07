@@ -1,5 +1,6 @@
 use core::mem;
 
+#[allow(dead_code)]
 pub(crate) fn gcd(mut a: i32, mut b: i32) -> i32 {
     if b > a {
         mem::swap(&mut a, &mut b);
@@ -12,6 +13,7 @@ pub(crate) fn gcd(mut a: i32, mut b: i32) -> i32 {
     return a.max(-a);
 }
 
+#[allow(dead_code)]
 pub(crate) fn lcm(a: i32, b: i32) -> i32 {
     if a > b {
         (a * b) / gcd(a, b)
@@ -20,6 +22,7 @@ pub(crate) fn lcm(a: i32, b: i32) -> i32 {
     }
 }
 
+#[allow(dead_code)]
 pub(crate) fn gcd_64(mut a: i64, mut b: i64) -> i64 {
     if b > a {
         mem::swap(&mut a, &mut b);
@@ -32,6 +35,7 @@ pub(crate) fn gcd_64(mut a: i64, mut b: i64) -> i64 {
     return a.max(-a);
 }
 
+#[allow(dead_code)]
 pub(crate) fn lcm_64(a: i64, b: i64) -> i64 {
     if a > b {
         (a * b) / gcd_64(a, b)
