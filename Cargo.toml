@@ -8,3 +8,4 @@ edition = "2021"
 [dependencies]
 blockingqueue = "0.1.1"
 itertools = "0.10.2"
+priority-queue = "1.2.1"
